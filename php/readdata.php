@@ -21,7 +21,7 @@
 
         echo '<div class="phone-data">
                 <div class="phone-name"><b>'.$row["title"] .'</b></div>
-                <div class="phone-price">' .$row["price"] .'</div>
+                <div class="phone-price">' .$row["price"] .'$</div>
         <div class="add-to-cart">
           <button type="button" class="btn btn-success btn-cart" onclick="addToCart()">Add TO Cart</button>
         </div>
