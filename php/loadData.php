@@ -1,5 +1,6 @@
 <?php
 include 'dbconn.php';
+global $PhName;
 $sql = "SELECT phId,phName,phPrice FROM phones";
 $result = $conn->query($sql);
 
@@ -12,6 +13,4 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
-echo $phId;
-echo $PhName;
 ?>

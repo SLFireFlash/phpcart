@@ -14,6 +14,7 @@
             <a class="nav-link active" aria-current="page" href="#">Hiru</a>
             <a class="nav-link" href="#">About</a>
             <a class="nav-link" href="#">feedback</a>
+
             <button class="btn btn-outline-success me-2" type="button" onclick="phoneStructFun()" id="more-load">More</button>
         </nav>
 
@@ -45,9 +46,7 @@
                 <div class="add-to-cart">
                   <button type="button" class="btn btn-success btn-cart" onclick="addToCart('xiaomi 13 pro','1760$')">Add TO Cart</button>
                 </div>
-              </div>
-              
-              
+              </div> 
             </div>
 
             <div class="box-col phone-no-130">
