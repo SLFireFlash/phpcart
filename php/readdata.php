@@ -7,15 +7,16 @@
 
     $sql = "SELECT phId, title, dep,price,thumbnail FROM phones";
     $result = $conn->query($sql);
-
+    echo '<div class="box-row phone-list no-1" id="phone-list">';
     if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        
+
+       
         echo '<div class="box-col phone-no-' .$row["phId"].'">';
         echo '<div class="phone-img">';
 
-        $imgTag = '<img class="phone-img" src="'. $row["thumbnail"]. '" alt="phone01" >';
+        $imgTag = '<img class="phone-img" src="'. $row["thumbnail"]. '" alt="phone01" ></div>';
         echo $imgTag;
 
         echo '<div class="phone-data">
@@ -24,14 +25,15 @@
         <div class="add-to-cart">
           <button type="button" class="btn btn-success btn-cart" onclick="addToCart()">Add TO Cart</button>
         </div>
-      </div>';
-
-
+      </div></div>';
 
     }
     } else {
     echo "0 results";
     }
+    echo '</div>';
+    echo '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>';
+
     $conn->close();
 
 ?>
