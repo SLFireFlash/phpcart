@@ -14,19 +14,12 @@
         $conn = mysqli_connect($servername, $username);
         $usedb = "USE cart";
 
-        // Check connection
         if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
         }
-        if ($conn->query($usedb) === TRUE) {
-            echo "<br>";
-            echo "Table used successfully";
-          } 
-        else {
+        if ($conn->query($usedb) != TRUE) {
             echo  $conn->error;
           }
-          echo "<br>";
-          echo "Connected successfully";
 
     ?>
     </body>
