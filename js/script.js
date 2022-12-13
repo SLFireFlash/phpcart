@@ -33,6 +33,7 @@ function phoneStructFun(){
 
 
     //phone-data
+    phoneListConst =document.getElementById(`phone-no-${structCount}`);
     mainDev =document.createElement("div");
     mainDev.setAttribute("class","phone-data");
     mainDev.setAttribute("id",`phone-data-${structCount}`);

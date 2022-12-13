@@ -53,6 +53,7 @@
 
               <div class="phone-img">
                 <img class="phone-img" src="imgs/3.jpg" alt="phone01" >
+              </div>
               <div class="phone-data">
                       <div class="phone-name"><b>Xiaomi 13 Pro</b></div>
                       <div class="phone-price">760$</div>
