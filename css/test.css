@@ -1,7 +1,6 @@
 
 .box-col{
     width: 190px;
-    height:auto;
     background-color: #432C7A;
     display: inline-block;
     border-radius: 15px;
@@ -9,6 +8,7 @@
     padding: 10px;
     margin-top: 5px;
     margin-left: 5px;
+    position: relative;
     
 }
 .phone-img{
@@ -21,6 +21,7 @@
 .phone-data{
     margin-top: 10px;
     width: 160px;
+    height: 100px;
 
     background-color: #80489C;
     display: inline-block;

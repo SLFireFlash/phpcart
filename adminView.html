@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Log in</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="php/userData.php" method="POST" >
+        <h3>Admin Login</h3>
+
+        <input type="text" placeholder="Email or Phone" id="username" name="userId">
+
+        <input type="password" placeholder="Password" id="password" name="UserPw">
+        
+        <input type="checkbox" name="isAdmin" id="isAdmin" value="1">
+        <input type="text" placeholder="Admin Token" id="Admin-Token" name="AdminToken">
+
+     
+        <button type="submit" name="submit">Sign UP</button>
+    </form>
+</body>
+</html>
+
