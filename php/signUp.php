@@ -49,5 +49,5 @@ else{
 
 
 
-
+$conn->close();
 ?>

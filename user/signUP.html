@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="../css/user.css">
 </head>
 <body>
     <div class="background">
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="php/userData.php" method="POST" >
+    <form action="../php/signUp.php" method="POST" >
         <h3>WELCOME</h3>
 
         <label for="username">Username</label>
@@ -30,9 +30,11 @@
      
 
         
-        <button type="submit" name="submit" id="sign-up-btn">Sign UP</button>
-        <button type="button" id="admin-token-req" onclick="adminLogIn()">Admin Login</button>
+        <button type="submit" name="submit" id="sign-up-btn">user Sign UP</button>
+        <button type="button" id="admin-token-req" onclick="adminLogIn()">Admin Sign Up</button>
+        <a href="logIn.html"><button type="button" name="login"  id="log-in-btn">Log In</button></a>
     </form>
-    <script src="js/admincheck.js"></script>
+    <script src="../js/admincheck.js"></script>
 </body>
 </html>
+

@@ -12,8 +12,8 @@
       <div class="wrapper container">
         <nav class="navbar navbar-light bg-light">
             <a class="nav-link active" aria-current="page" href="#">Hiru</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">feedback</a>
+            <a class="nav-link" href="user/logIn.html">log In</a>
+            <a class="nav-link" href="user/signUp.html">sign Up</a>
 
             <button class="btn btn-outline-success me-2" type="button" onclick="phoneStructFun()" id="more-load">More</button>
         </nav>
