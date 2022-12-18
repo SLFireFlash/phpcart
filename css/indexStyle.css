@@ -1,0 +1,58 @@
+
+body{
+    background-color: #080710;
+    background-image: url("../imgs/bg.jpg");
+    
+}
+
+.welcome{
+    float: left;
+    font-size: 65px;
+    text-align: left;
+    color: aliceblue;
+    margin-top: 20%;
+}
+
+.main-buttons{
+    margin-top: 5%;
+    float: left;
+
+}
+.mainbutton {
+    border-radius: 4px;
+    background-color: #127e1b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .mainbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .mainbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .mainbutton:hover span {
+    padding-right: 25px;
+  }
+  
+  .mainbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
