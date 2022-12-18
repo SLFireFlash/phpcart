@@ -13,13 +13,23 @@ if($result->num_rows == 1) {
     $uId =$row['UserID'];
     $uPw =$row['Password'];
     $ad =$row['isAdmin'];
+    $jsonData =[
+            'userName'=> $uName,
+            'userId' =>$uId,
+            'isAdmin'=>$ad  
+    ];
+    $jsonString = json_encode($jsonData, JSON_PRETTY_PRINT);
+    $fileOpen = fopen('../json/tempData.json', 'w');
+    fwrite($fileOpen, $jsonString);
+    fclose($fileOpen);
+
 
     if($uPw == $userPw){
         if($ad == 1){
             echo "Admin Log In done..";
         }
         else{
-            echo "user login done...";
+            header("Location: ../product/products.php");
         }
     }else{
         echo "password wrong";
@@ -63,7 +73,6 @@ echo "<br>";
 echo "user ID:".$uId;
 echo "<br>";
 echo "is Admin:".$ad;
-$conn->close();
 
 
 
