@@ -1,7 +1,7 @@
 <?php
   include "dbconn.php";
-  for ($x = 10; $x <= 20; $x++) {
-    $jsondata = file_get_contents('https://dummyjson.com/products/2'.$x);
+  for ($x =10; $x <= 15; $x++) {
+    $jsondata = file_get_contents('https://dummyjson.com/products/'.$x);
     $data = json_decode($jsondata, true);
   
     $title =$data['title'];

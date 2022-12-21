@@ -26,9 +26,11 @@ if($result->num_rows == 1) {
 
     if($uPw == $userPw){
         if($ad == 1){
-            echo "Admin Log In done..";
+            //admin login
+            header("Location: ../product/products.php");
         }
         else{
+            //user login
             header("Location: ../product/products.php");
         }
     }else{
@@ -76,4 +78,5 @@ echo "is Admin:".$ad;
 
 
 
+$conn->close();
 ?>

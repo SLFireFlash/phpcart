@@ -1,4 +1,9 @@
-<?php
+
+let buttonList = document.querySelectorAll("button");
+buttonList.forEach(function(i){
+    i.addEventListener("click", function(e){
+     alert("item Added To Cart");
+     <?php
     $jsondata = file_get_contents('../json/tempData.json');
     $data = json_decode($jsondata, true);
     $userName =$data['userName'];
@@ -18,7 +23,7 @@
     <title>Products</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark container">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +52,6 @@
       </nav>
       
     <div class="container products-page">
-      <form action="" method="POST">
       <?php
         include "../php/dbconn.php";
 
@@ -68,40 +72,18 @@
                       <div class="phone-name"><b>'.$row["title"] .'</b></div>
                       <div class="phone-price">' .$row["price"] .'$</div>
               <div class="add-to-cart">
-                <button type="submit7890" name="btn-add-to-cart-id" id="btn_'.$row["phId"].'" class="btn btn-success btn-cart" value="'.$row["phId"].'">Add TO Cart</button>
+                <button type="button" id="btn_'.$row["phId"].'" class="btn btn-success btn-cart" value="'.$row["phId"].'" onclick="addToCart(this)">Add TO Cart</button>
               </div>
             </div></div>';
           }
           }
 
-
-      ?>  
-      </form>   
-    </div></div>
-    <div class="container cart-page">
-      <div class="cart-title-M">YOUR CART</div>
-      <hr height="4%">
-
+      ?>     
     </div>
     <script src="../js/addToCart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
 
-<?php
-   if (isset($_POST["btn-add-to-cart-id"]))
-   {
-       $clickedBtnId = $_POST["btn-add-to-cart-id"];
-       $sql = "INSERT INTO cart_data (userID, productID)
-       VALUES ('".$userId."', '".$clickedBtnId."')";
-       if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-        
-      } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-      }
-      
-      $conn->close();
-   }
-
-?>
+    })
+  })

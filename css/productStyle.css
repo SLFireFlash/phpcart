@@ -1,4 +1,23 @@
-.products-page{
+body{
     background-image: url(../imgs/bg.jpg);
-    height: auto;
+    
+}
+.products-page{
+    max-width: 75%;
+    float: left;
+
+}
+.cart-page{
+    max-width: 25%;
+    height: 100px;
+    float: right;
+    border: solid;
+    position: relative;
+}
+.cart-title-M{
+    max-width: 100%;
+    font-size: 45px;
+    text-align: center;
+    color: aliceblue;
+
 }
