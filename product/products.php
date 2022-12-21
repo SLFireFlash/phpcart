@@ -68,7 +68,7 @@
                       <div class="phone-name"><b>'.$row["title"] .'</b></div>
                       <div class="phone-price">' .$row["price"] .'$</div>
               <div class="add-to-cart">
-                <button type="submit7890" name="btn-add-to-cart-id" id="btn_'.$row["phId"].'" class="btn btn-success btn-cart" value="'.$row["phId"].'">Add TO Cart</button>
+                <button type="submit" name="btn-add-to-cart-id" id="btn_'.$row["phId"].'" class="btn btn-success btn-cart" value="'.$row["phId"].'">Add TO Cart</button>
               </div>
             </div></div>';
           }
