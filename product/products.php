@@ -35,11 +35,11 @@
             </ul>
             <?php
             if ($isAdmin ==1){
-              echo '<a class="nav-link active me-2" aria-current="page" href="#" id="product-add">Add Product</a>';
+              echo '<a class="nav-link active me-2" aria-current="page" href="addPoduct.php" id="product-add">Add Product</a>';
             }
 
 
-            echo '<a class="nav-link active me-2" aria-current="page" href="#" id="account-id">'.$userName.'</a>';
+            echo '<a class="nav-link active me-2" aria-current="page" href="" id="account-id">'.$userName.'</a>';
 
             ?>
           </div>
